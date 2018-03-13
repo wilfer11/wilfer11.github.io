@@ -7,11 +7,10 @@ body {
   height: 100%;
   background: linear-gradient(126deg, #000000, #8a8a8a, #b9b8b8, #8a8a8a, #000000);
   background-size: 1000% 1000%;
-  -webkit-animation: BoundBG 1000s ease infinite;
+  -webkit-animation: BoundBG 700s ease infinite;
   -moz-animation: BoundBG 1000s ease infinite;
   -o-animation: BoundBG 1000s ease infinite;
   animation: BoundBG 1000s ease infinite;
-  
 }
 
 @-webkit-keyframes BoundBG {
@@ -43,9 +42,10 @@ body {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  color: orange !important;
 }
 
 .cover-container {
@@ -113,4 +113,47 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+.inner {
+  font-size: 40px;
+  margin-bottom: 25px;
+  padding-top: 10%;
+}
+.inner > a {
+  cursor: pointer;
+  color: orange;
+}
+.inner > a:hover {
+  color: lightgray;
+  text-decoration: none;  
+}
+
+
+.icon-B_Standard_Black{
+  font-size:40vw;
+}
+.icon-B_Standard_Black:hover {
+  color: lightgray;
+}
+
+
+@media screen and (max-width: 1024px) {
+  /* start of large tablet styles */
+  .icon-B_Standard_Black{
+    font-size: 110vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+  .icon-B_Standard_Black{
+    font-size: 110vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  .icon-B_Standard_Black{
+    font-size:140vw;
+  }
 }
