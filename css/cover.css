@@ -27,7 +27,34 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background: linear-gradient(126deg, #000000, #8a8a8a, #b9b8b8, #8a8a8a, #000000);
+  background-size: 1000% 1000%;
+  -webkit-animation: BoundBG 1000s ease infinite;
+  -moz-animation: BoundBG 1000s ease infinite;
+  -o-animation: BoundBG 1000s ease infinite;
+  animation: BoundBG 1000s ease infinite;
+  
+}
+
+@-webkit-keyframes BoundBG {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
+}
+@-moz-keyframes BoundBG {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
+}
+@-o-keyframes BoundBG {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
+}
+@keyframes BoundBG {
+  0%{background-position:9% 0%}
+  50%{background-position:92% 100%}
+  100%{background-position:9% 0%}
 }
 
 body {
