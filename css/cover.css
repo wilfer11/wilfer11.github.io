@@ -144,4 +144,5 @@ svg {
   height: 90%;
   width: 100%;
   padding: 35px;
+  pointer-events: none;
 }
