@@ -116,8 +116,8 @@ body {
 }
 
 .inner {
-  font-size: 40px;
-  margin-bottom: 25px;
+  font-size: 6vh;
+  margin-bottom: 15px;
   padding-top: 10%;
 }
 .inner > a {
@@ -131,29 +131,17 @@ body {
 
 
 .icon-B_Standard_Black{
-  font-size:40vw;
+  font-size:4000vw;
 }
 .icon-B_Standard_Black:hover {
   color: lightgray;
 }
 
-
-@media screen and (max-width: 1024px) {
-  /* start of large tablet styles */
-  .icon-B_Standard_Black{
-    font-size: 110vw;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* start of large tablet styles */
-  .icon-B_Standard_Black{
-    font-size: 110vw;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  /* start of phone styles */
-  .icon-B_Standard_Black{
-    font-size:140vw;
-  }
+svg { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  padding: 35px;
 }
