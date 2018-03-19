@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Home page of all things to do with Wilfer 11 (AKA Wilf)">
+        <meta name="description" content="Home page of all things to do with Wilfer 11/Wilf">
         <meta name="author" content="Wilf G">
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" href="favicon.ico">
@@ -20,7 +20,18 @@
     </head>
 
     <body id="instafeed">
-        <a id="responsive_headline" href="http://instagram.com/wilfer11">Wilfer 11</a>
+        <span id="responsive_headline">Wilfer 11</span>
+        <div id="socials">
+            <a class="icon-envelop" href="mailto:33bound.collective@gmail.com"></a>
+            <a class="icon-facebook2"  href="https://www.instagram.com/dcrm.ldn/"></a>
+            <a class="icon-instagram" href="http://dcrm-ldn.tumblr.com"></a>
+            <a class="icon-twitter" href="https://vimeo.com/dcrmldn"></a>
+            <a class="icon-youtube" href="https://vimeo.com/dcrmldn"></a>
+            <a class="icon-steam2" href="https://vimeo.com/dcrmldn"></a>
+            <a class="icon-soundcloud2" href="https://vimeo.com/dcrmldn"></a>
+            <a class="icon-linkedin2" href="https://vimeo.com/dcrmldn"></a>
+            <a class="icon-lastfm2" href="https://vimeo.com/dcrmldn"></a>
+        </div>
         <div id="footer">
                 &copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Wilf Glover.
         </div>
@@ -43,6 +54,12 @@
             template: '<div class="background-image" style="background-image: url(\'{{image}}\');"></div>',
         });
         feed.run();
-        window.fitText( document.getElementById("responsive_headline") );
+        $(window).bind("load", function() {
+            jQuery(function($) {
+
+            $(document.body).fadeIn(1000);
+            window.fitText( document.getElementById("responsive_headline") );
+            });        
+        });
     </script>
 </html>

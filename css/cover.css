@@ -3,24 +3,25 @@
 }
 
 body {
-  background: linear-gradient(270deg, #122538, #000000, #122538);
+  display: none;
+  background: linear-gradient(270deg, #2c2c2c, #000000, #2c2c2c);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: BackgroundAnimation 30s ease infinite;
+  -moz-animation: BackgroundAnimation 30s ease infinite;
+  animation: BackgroundAnimation 30s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes BackgroundAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes BackgroundAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes AnimationName { 
+@keyframes BackgroundAnimation { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -29,13 +30,33 @@ body {
 .background-image {
   background-size: cover;
   display: block;
-  filter: blur(50px);
-  -webkit-filter: blur(50px);
+  -webkit-animation: blur 30s ease infinite;
+  -moz-animation: blur 30s ease infinite;
+  animation: blur 30s ease infinite;
   height: 800px;
   left: 0;
   position: fixed;
   right: 0;
   z-index: 1;
+}
+
+@-webkit-keyframes blur {
+  0%, 100%  {   filter: blur(50px);
+    -webkit-filter: blur(50px); }
+  50% {   filter: blur(150px);
+    -webkit-filter: blur(150px); }
+}
+@-moz-keyframes blur {
+  0%, 100%  {   filter: blur(50px);
+    -webkit-filter: blur(50px); }
+  50% {   filter: blur(150px);
+    -webkit-filter: blur(150px); }
+}
+@keyframes blur {
+  0%, 100%  {   filter: blur(50px);
+    -webkit-filter: blur(50px); }
+  50% {   filter: blur(150px);
+    -webkit-filter: blur(150px); }
 }
 
 #responsive_headline {
@@ -45,7 +66,10 @@ body {
   z-index: 10;
   text-align: center;
   color:white;
-  text-shadow: black 5px;
+  text-shadow:    -1px -1px 0 grey,  
+  1px -1px 0 grey,
+  -1px 1px 0 grey,
+   1px 1px 0 grey;
   font-family: 'Paytone One', sans-serif;
   text-decoration: none;
 }
@@ -58,4 +82,78 @@ body {
   color: white;
   text-align: center;
   width: 100%;
+}
+
+#socials {
+  position: absolute;
+  bottom: 7vh;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+#socials > a {
+  z-index: 10;
+  font-size: 6vh;
+  margin:10px;
+  color: #ffffffce;
+  text-decoration: none;
+}
+#socials > a:hover {
+  color: white;
+}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?anq7nz');
+  src:  url('fonts/icomoon.eot?anq7nz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?anq7nz') format('truetype'),
+    url('fonts/icomoon.woff?anq7nz') format('woff'),
+    url('fonts/icomoon.svg?anq7nz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-steam2:before {
+  content: "\eaad";
+}
+.icon-soundcloud2:before {
+  content: "\eac4";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-lastfm2:before {
+  content: "\eacc";
 }
