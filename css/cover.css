@@ -95,13 +95,15 @@ body {
   z-index: 10;
   font-size: 6vh;
   margin: 1vw;  
-  color: lightcyan;
+  color: white;
   text-decoration: none;
 }
 #socials > a:hover {
-  color: white;
+  text-shadow:    -1px -1px 0 lightcyan,  
+  1px -1px 0 lightcyan,
+  -1px 1px 0 lightcyan,
+   1px 1px 0 lightcyan;
 }
-
 
 
 @font-face {
@@ -132,28 +134,37 @@ body {
 
 .icon-envelop:before {
   content: "\e945";
+  color: white;
 }
 .icon-facebook2:before {
   content: "\ea91";
+  color: white;
 }
 .icon-instagram:before {
   content: "\ea92";
+  color: white;
 }
 .icon-twitter:before {
   content: "\ea96";
+  color: white;
 }
 .icon-youtube:before {
   content: "\ea9d";
+  color: white;
 }
 .icon-steam2:before {
   content: "\eaad";
+  color: white;
 }
 .icon-soundcloud2:before {
   content: "\eac4";
+  color: white;
 }
 .icon-linkedin2:before {
   content: "\eaca";
+  color: white;
 }
 .icon-lastfm2:before {
   content: "\eacc";
+  color: white;
 }
