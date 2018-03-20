@@ -30,9 +30,9 @@ body {
 .background-image {
   background-size: cover;
   display: block;
-  -webkit-animation: blur 10s ease infinite;
-  -moz-animation: blur 10s ease infinite;
-  animation: blur 10s ease infinite;
+  -webkit-animation: blur 10s  infinite;
+  -moz-animation: blur 10s  infinite;
+  animation: blur 10s  infinite;
   height: 160vh;
   left: 0;
   position: fixed;
