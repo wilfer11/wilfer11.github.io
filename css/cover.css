@@ -92,17 +92,21 @@ body {
   width: 100%;
   text-align: center;
 }
+
+a { color:lightcyan } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:white }
+
 #socials > a {
   z-index: 10;
   font-size: 6vh;
   margin: 1vw;  
-  color: #ffffffce;
-  text-decoration: none;
 }
-#socials > a:hover {
-  color: white;
-}
-
 
 
 @font-face {
