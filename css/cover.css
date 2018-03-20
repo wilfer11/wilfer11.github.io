@@ -99,10 +99,7 @@ body {
   text-decoration: none;
 }
 #socials > a:hover {
-  text-shadow:    -1px -1px 0 lightcyan,  
-  1px -1px 0 lightcyan,
-  -1px 1px 0 lightcyan,
-   1px 1px 0 lightcyan;
+    opacity: 0.7;
 }
 
 
