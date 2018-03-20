@@ -9,7 +9,6 @@ body {
   -webkit-animation: BackgroundAnimation 30s ease infinite;
   -moz-animation: BackgroundAnimation 30s ease infinite;
   animation: BackgroundAnimation 30s ease infinite;
-  color: white;
 }
 
 @-webkit-keyframes BackgroundAnimation {
@@ -92,21 +91,17 @@ body {
   width: 100%;
   text-align: center;
 }
-
-a { color:lightcyan !important; text-decoration: none; } /* Globally */
-
-/* Each state */
-
-a:visited { text-decoration: none; color:white !important; }
-a:hover { text-decoration: none; color:white !important; }
-a:focus { text-decoration: none; color:white !important; }
-a:hover, a:active { text-decoration: none; color:white !important }
-
 #socials > a {
   z-index: 10;
   font-size: 6vh;
   margin: 1vw;  
+  color: lightcyan;
+  text-decoration: none;
 }
+#socials > a:hover {
+  color: white;
+}
+
 
 
 @font-face {
