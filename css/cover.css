@@ -93,14 +93,14 @@ body {
   text-align: center;
 }
 
-a { color:lightcyan } /* Globally */
+a { color:lightcyan !important; text-decoration: none; } /* Globally */
 
 /* Each state */
 
-a:visited { text-decoration: none; color:white; }
-a:hover { text-decoration: none; color:white; }
-a:focus { text-decoration: none; color:white; }
-a:hover, a:active { text-decoration: none; color:white }
+a:visited { text-decoration: none; color:white !important; }
+a:hover { text-decoration: none; color:white !important; }
+a:focus { text-decoration: none; color:white !important; }
+a:hover, a:active { text-decoration: none; color:white !important }
 
 #socials > a {
   z-index: 10;
