@@ -30,9 +30,9 @@ body {
 .background-image {
   background-size: cover;
   display: block;
-  -webkit-animation: blur 10s  infinite;
-  -moz-animation: blur 10s  infinite;
-  animation: blur 10s  infinite;
+  -webkit-animation: blur 30s  infinite;
+  -moz-animation: blur 30s  infinite;
+  animation: blur 30s  infinite;
   height: 160vh;
   left: 0;
   position: fixed;
@@ -43,20 +43,20 @@ body {
 @-webkit-keyframes blur {
   0%, 100%  {   filter: blur(50px);
     -webkit-filter: blur(50px); }
-  50% {   filter: blur(70px);
-    -webkit-filter: blur(70px); }
+  50% {   filter: blur(150px);
+    -webkit-filter: blur(150px); }
 }
 @-moz-keyframes blur {
   0%, 100%  {   filter: blur(50px);
     -webkit-filter: blur(50px); }
-  50% {   filter: blur(70px);
-    -webkit-filter: blur(70px); }
+  50% {   filter: blur(150px);
+    -webkit-filter: blur(150px); }
 }
 @keyframes blur {
   0%, 100%  {   filter: blur(50px);
     -webkit-filter: blur(50px); }
-  50% {   filter: blur(70px);
-    -webkit-filter: blur(70px); }
+  50% {   filter: blur(150px);
+    -webkit-filter: blur(150px); }
 }
 
 #responsive_headline {
